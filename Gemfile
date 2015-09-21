@@ -41,5 +41,11 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'rspec', '3.2.0'
+  gem 'rspec-core', '3.2.3' # for the command line of rspec on your shell
+  gem 'rspec-expectations', '3.2.1' # 'Provides a readable API to express expected outcomes of a code example.
+  gem 'rspec-mocks', '3.2.1' # 'Test double framework, providing multiple types of fake objects to allow you to tightly control the environment in which your specs run.’
+  gem 'rspec-rails', '3.2.3'
+  gem 'rspec-support', '3.2.2'
 end
 
