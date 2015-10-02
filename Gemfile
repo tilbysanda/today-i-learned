@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Database
+gem 'pg', '~> 0.18.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,14 +25,25 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Database
-gem 'pg', '~> 0.18.3'
-
+## Features
 # Authentication
 gem 'devise'
-
 # Pages controller
 gem 'high_voltage', '~> 2.4.0'
+# Votes
+gem 'acts_as_votable', '~> 0.10.0'
+# Tagging
+gem 'acts-as-taggable-on', '~> 3.4'
+
+
+## React/FrontEnd
+# React
+gem 'js-routes'
+gem 'react-rails', '1.2.0'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-classnames'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
