@@ -6,10 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-john = User.create(email: 'john@beatles.com', password: 'testtest')
-paul = User.create(email: 'paul@beatles.com', password: 'testtest')
-ringo = User.create(email: 'ringo@beatles.com', password: 'testtest')
-george = User.create(email: 'george@beatles.com', password: 'testtest')
+john = User.create(email: 'john@beatles.com', password: 'testtest', first_name: 'john', last_name: 'john')
+paul = User.create(email: 'paul@beatles.com', password: 'testtest', first_name: 'paul', last_name: 'paul')
+ringo = User.create(email: 'ringo@beatles.com', password: 'testtest', first_name: 'ringo', last_name: 'ringo')
+george = User.create(email: 'george@beatles.com', password: 'testtest', first_name: 'george', last_name: 'george')
 
 posts = Post.create([
   {title: "test#{(1..10).to_a.sample}", description: 'test description lorem ipsum', category: 'lifestyle'},
