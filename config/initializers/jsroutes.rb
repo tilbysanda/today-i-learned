@@ -6,5 +6,7 @@ JsRoutes.setup do |config|
   #       before restarting your 'rails s'
   config.include = [
     # TODO: add missing routes
+    /^like_post$/
   ]
 end
+

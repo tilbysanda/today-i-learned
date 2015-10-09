@@ -1,4 +1,4 @@
-json.extract! post, :title, :description, :category
+json.extract! post, :id, :title, :description, :category
 
 if post.user
   json.user do
@@ -6,8 +6,8 @@ if post.user
   end
 end
 
-json.up_votes post.votes_for.count
+json.likes post.votes_for.count
 
 if user_signed_in?
-  json.up_voted current_user.voted_for? post
+  json.liked current_user.voted_for? post
 end

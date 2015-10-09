@@ -8,6 +8,14 @@ var PostContainerItem = React.createClass({
         <p>
           {this.props.post.description}
         </p>
+        <div className="post-footer">
+            <p>
+              CLICK_TO_UPVOTE
+            </p>
+          <div className="post-likes">
+            <Like post={this.props.post} />
+          </div>
+        </div>
       </div>
       // <div className="post">
       //   <div className="post-code-language">
@@ -20,12 +28,7 @@ var PostContainerItem = React.createClass({
       //     <p>
       //       {this.props.post.description}
       //     </p>
-      //   </div>
-      //   <div className="post-controls">
-      //     <div className="post-control">
-      //       <div className="post-likes">
-      //         TODO
-      //       </div>
+      // //   </div>
       //       <div className="post-tags">
       //         TODO
       //       </div>

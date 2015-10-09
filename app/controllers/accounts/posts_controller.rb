@@ -1,5 +1,4 @@
 class Accounts::PostsController < ApplicationController
-
   def new
   end
 
