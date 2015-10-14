@@ -7,13 +7,12 @@ var Like = React.createClass({
 
   render: function() {
     var divClasses = classNames({
-      "post-like-count": true,
       "post-liked": this.state.post.liked
-    })
+    });
 
-    return (
+    return(
       <div className={divClasses} onClick={this.handleClick}>
-        {this.state.post.likes}
+        <i className="fa fa-heart"></i> {this.state.post.likes}
       </div>
     );
   },
@@ -24,7 +23,7 @@ var Like = React.createClass({
       type: 'POST',
       url: Routes.like_post_path(this.props.post.id, { format: 'json' }),
       success: function(data) {
-        that.setState({ product: data });
+        that.setState({ post: data });
       }
     });
   }

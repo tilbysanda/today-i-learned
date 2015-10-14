@@ -11,11 +11,10 @@ class PostsController < ApplicationController
   def like
     @post = Post.find(params[:id])
     if current_user.voted_for? @post
-      # we cancel the vote
       current_user.unvote_for @post
     else
-      # we vote
       current_user.up_votes @post
     end
+    @post
   end
 end

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Futura-light";
+  // src: font-url('FontFile.eot');
+  // src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+  //      font-url('FontFile.woff') format('woff'),
+  src: font-url('futurastd-light.ttf') format('truetype')
+}
+$futura-light: "Futura-light";
+
+@font-face {
+  font-family: "Futura-bold";
+  // src: font-url('FontFile.eot');
+  // src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+  //      font-url('FontFile.woff') format('woff'),
+  src: font-url('futurastd-bold.ttf') format('truetype')
+}
+$futura-bold: "Futura-bold";
+
+// Base fonts
+$font-family-sans-serif: "Futura-light";
+$headings-font-family: "Futura-bold";

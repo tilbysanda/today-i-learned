@@ -1,10 +1,13 @@
 var PostContainer = React.createClass({
   render: function() {
+    var posts = this.props.posts;
     return (
-      <div>
-        { this.props.posts.map(function(post){
-          return <PostContainerItem post={post} />;
-        })}
+      <div className="post-container">
+        { posts.map(function(post){
+          return (
+            <PostContainerItem key={post.id} post={post} />
+          );
+        })};
       </div>
     );
   }
