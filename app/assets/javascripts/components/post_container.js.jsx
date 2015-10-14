@@ -7,7 +7,7 @@ var PostContainer = React.createClass({
           return (
             <PostContainerItem key={post.id} post={post} />
           );
-        })};
+        })}
       </div>
     );
   }
