@@ -4,7 +4,6 @@ var PostContainerItem = React.createClass({
       <div className="col-xs-12 col-sm-4">
         <div className="post">
           <div className="post-markup">
-            // <MarkUp post={this.props.post} />
           </div>
           <div className="post-title">
             <p>
