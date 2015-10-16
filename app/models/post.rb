@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   # Validations
-  validates :category, inclusion: { in: %w(trick tutorial lifestyle), message: "%{value} is not a valid category" }
+  valid_categories = %w(trick tutorial lifestyle resource)
+  validates :category, inclusion: { in: valid_categories, message: "%{value} is not a valid category: #{valid_categories.join(", ")}"  }
   # validates :title, presence: true
   # validates :description, presence: true
   # validates :user, presence: true
