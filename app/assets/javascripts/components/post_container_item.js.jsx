@@ -2,7 +2,7 @@ var PostContainerItem = React.createClass({
   render: function() {
     return (
       <div className="col-xs-12 col-sm-4">
-        <div className="post">
+        <div className="post post-white">
           <div className="post-markup">
           </div>
           <div className="post-title">

@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="col-xs-12 col-sm-4">
+    <div class="post post-new">
+      <%= link_to new_account_post_path do %>
+        <i class="fa fa-plus"></i>
+      <% end %>
+    </div>
+  </div>
+   <%= react_component "PostContainer", render(template: 'posts/index.json.jbuilder'), prerender: true %>
+</div>
+

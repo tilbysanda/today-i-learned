@@ -17,7 +17,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <%= link_to "Board", account_posts_path %>
+          <%= link_to account_posts_path do%>
+            <i class="fa fa-th-large"></i>
+          <% end %>
         </li>
         <li role="presentation" class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <%= current_user ? current_user.first_name : "More" %> <span class="caret"></span></a>

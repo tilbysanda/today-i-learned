@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="post-form">
+      <h1>Create a new post</h1>
+      <%= simple_form_for(@post, url: account_posts_path) do |f| %>
+        <%= f.input :title %>
+        <%= f.input :description, as: :text, id: "simple-mde-textarea" %>
+        <%= f.input :category, collection: @categories %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= content_for :after_js do %>
+  <script type="text/javascript">
+    var simplemde = new SimpleMDE({
+      element: $("#simple-mde-textarea")[0],
+      initialValue: "Hello, write your post description here!",
+      autosave: {
+        enabled: true,
+        unique_id: "SimpleMdePostDescription"
+      }
+    });
+
+    $("a[title='Toggle Fullscreen (F11)']").click(function() {
+      $(".navbar").toggleClass("hidden");
+    });
+  </script>
+<% end %>

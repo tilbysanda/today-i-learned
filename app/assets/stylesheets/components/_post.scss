@@ -1,15 +1,31 @@
 .post {
   min-height: 220px;
-  background-color: white;
   border-radius: 5px;
   margin-right: 2px;
   margin-bottom: 30px;
   padding: 10px;
+  &-white {
+    background-color: white;
+  }
   &-title {
   }
   &-footer {
     position: absolute;
     bottom: 15%;
+  }
+  &-new {
+    border-style: dashed;
+    border-color: #BBB5B5;
+    backgroud-color: #F4F4F4;
+    text-align: center;
+    padding-top: 20%;
+    i {
+      font-size: 50px;
+      color: #BBB5B5;
+      &:hover {
+        color: white;
+      }
+    }
   }
 }
 

@@ -40,6 +40,9 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'acts-as-taggable-on', '~> 3.4'
 
 
+# Form
+gem 'simple_form'
+
 # Bootstrap/Front-End
 gem "bootstrap-sass"
 gem "font-awesome-sass"

@@ -10,11 +10,12 @@ class Accounts::PostsController < ApplicationController
 
   def new
     @post = Post.new()
+    @categories = Post.valid_categories
   end
 
   def create
     @post = Post.new(post_params)
-    return false unless curent_user
+    return false unless current_user
     @post.user = current_user
 
     if @post.save
@@ -45,6 +46,6 @@ class Accounts::PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :description, :tag_list, :user_id)
+    params.require(:post).permit(:title, :description, :tag_list, :user_id, :category)
   end
 end
