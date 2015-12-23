@@ -23,8 +23,9 @@
       }
     });
 
-    $("a[title='Toggle Fullscreen (F11)']").click(function() {
-      $(".navbar").toggleClass("hidden");
+    $("a[title='Toggle Fullscreen (F11)'], a[title='Toggle Side by Side (F9)']").click(function() {
+        // TODO: fix the side by side then fullscreen problem (with navbar)
+        $(".navbar").toggleClass("hidden");
     });
   </script>
 <% end %>

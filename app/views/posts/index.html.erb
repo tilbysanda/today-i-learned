@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Today we learned</h1>
 
+  <%= render template: 'posts/index.json.jbuilder' %>
   <%= react_component "PostContainer", render(template: 'posts/index.json.jbuilder'), prerender: true %>
 </div>
